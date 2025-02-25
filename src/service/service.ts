@@ -1,6 +1,6 @@
 export default function dominoUtils(domino: [number, number][]) {
     function sameNumber() {
-      return domino.filter(([top, bottom]) => top === bottom).length;
+      return domino.filter(([top, bottom]) => top === bottom);
     }
   
 

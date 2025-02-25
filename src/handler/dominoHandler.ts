@@ -7,7 +7,7 @@ const buttons = () => {
         console.log(result);
         const element = document.getElementById('same-number-result');
         if (element) {
-            element.innerHTML = `Same Number: ${result}`;
+            element.innerHTML = `[[${result.map((card:[number, number]) => `[${card[0]}, ${card[1]}]`).join(', ')}]]`;
           } else {
             alert('Error: Input element not found');
           }
@@ -18,7 +18,7 @@ const buttons = () => {
         console.log(result);
         const element = document.getElementById('sort-ascending-result');
         if (element) {
-            element.innerHTML = `Sort Ascending: ${result}`;
+            element.innerHTML = `[[${result.map((card:[number, number]) => `[${card[0]}, ${card[1]}]`).join(', ')}]]`;
           } else {
             alert('Error: Input element not found');
           }
@@ -29,7 +29,7 @@ const buttons = () => {
         console.log(result);
         const element = document.getElementById('sort-descending-result');
         if (element) {
-            element.innerHTML = `Sort Descending: ${result}`;
+            element.innerHTML = `[[${result.map(card => `[${card[0]}, ${card[1]}]`).join(', ')}]]`;
           } else {
             alert('Error: Input element not found');
           }
@@ -40,7 +40,7 @@ const buttons = () => {
         console.log(result);
         const element = document.getElementById('remove-duplicates-result');
         if (element) {
-            element.innerHTML = `Remove Duplicates: ${result}`;
+            element.innerHTML = `[[${result.map(card => `[${card[0]}, ${card[1]}]`).join(', ')}]]`;
           } else {
             alert('Error: Input element not found');
           }
@@ -51,7 +51,7 @@ const buttons = () => {
         console.log(result);
         const element = document.getElementById('flip-cards-result');
         if (element) {
-            element.innerHTML = `Flip Cards: ${result}`;
+            element.innerHTML = `[[${result.map(card => `[${card[0]}, ${card[1]}]`).join(', ')}]]`;
           } else {
             alert('Error: Input element not found');
           }
@@ -65,7 +65,7 @@ const buttons = () => {
           console.log(result);
           const element = document.getElementById('remove-total-result');
           if (element) {
-            element.innerHTML = `Remove Total: ${result}`;
+            element.innerHTML = `[[${result.map(card => `[${card[0]}, ${card[1]}]`).join(', ')}]]`;
           } else {
             alert('Error: Input element not found');
           }
