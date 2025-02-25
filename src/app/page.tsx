@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+
 import { dominoCards } from "./source/source";
 import buttons from "@/handler/dominoHandler";
 
